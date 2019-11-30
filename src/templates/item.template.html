@@ -1,0 +1,15 @@
+<!-- <h1>{{$ctrl.ilist}}</h1> -->
+<div style="width: 150%;padding-left: 20px;" >
+<table style="padding-left:20px; border-color: black;" width="50%">
+	<tr style="text-align: center; padding-left: 10px; font-size: 20px; font-weight: bold; color:white; font-style: italic; padding-right: 10px; color: rgb(63, 79, 97);background: rgb(221, 237, 232);">
+		<td>Name</td>
+		<td>Description</td>
+		<td>Price</td>
+	</tr>
+	<tr ng-repeat='item in $ctrl.ilist.data["menu_items"]' style="background: rgb(63, 79, 97);color:white;font-size:18px;">
+			<td>{{item.name}}</td>
+			<td >{{item.description}}</td>
+			<td style="padding-left: 50px; padding-right: 50px;">large: ${{item.price_large}} / small: ${{item.price_small}}</td>
+	</tr>
+</table>
+</div>

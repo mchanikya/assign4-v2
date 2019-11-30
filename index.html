@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    <title>Routing with service</title>
+  </head>
+  <body ng-app='NestedRouterApp'>
+
+    <div style="padding-bottom:20px;">
+      <button class="btn btn-primary" style="background: grey; font-size: 20px; padding-left:30px; padding-top:10px; padding-right:30px;  padding-bottom:10px;" type="button" name="Home" ui-sref='/'>Home</button>
+      <button class="btn btn-primary" style="background: grey; font-size: 20px; padding-left:30px; padding-top:10px; padding-right:30px;  padding-bottom:10px;" type="button" name="categories" ui-sref='categories'>Cateogories</button>
+    </div>
+
+    <!-- Include library js -->
+    <script type="text/javascript" src='lib/angular.min.js'></script>
+    <script type="text/javascript" src='lib/angular-ui-router.min.js'></script>
+
+    <!-- Include Modules js -->
+    <script type="text/javascript" src='src/modules/NestedRouterModule.js'></script>
+
+    <!-- Include Routers js -->
+    <script type="text/javascript" src='src/router.js'></script>
+
+    <!-- Include services js -->
+    <script type="text/javascript" src='src/services/routeServices.js'></script>
+
+    <!-- Include controllers js -->
+    <script type="text/javascript" src='src/controllers/home.controller.js'></script>
+    <script type="text/javascript" src='src/controllers/categories.controller.js'></script>
+    <script type="text/javascript" src='src/controllers/items.controller.js'></script>
+
+    <!-- Include Components js -->
+    <script type="text/javascript" src='src/components/home.component.js'></script>
+    <script type="text/javascript" src='src/components/categories.component.js'></script>
+    <script type="text/javascript" src='src/components/items.component.js'></script>
+
+    <ui-view> </ui-view>
+
+  </body>
+</html>

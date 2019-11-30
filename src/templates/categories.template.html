@@ -1,0 +1,7 @@
+<h1>{{$ctrl.catwelcomeheading}}</h1>
+<ul>
+  <li ng-repeat='item in $ctrl.catlist["data"]'>
+    <a ui-sref="hello({itemId:item.short_name})"
+    ui-sref-active="activeTab">{{item.short_name}} {{item.name}}</a>
+  </li>
+</ul>
